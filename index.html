@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous" />
+		<link
+			rel="stylesheet"
+			href="styles.css" />
+		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet" />
+
+		<script
+			defer
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"></script>
+
+		<title>PetFinder</title>
+	</head>
+	<body>
+		<header
+			id="myHeader"
+			class="">
+			<svg
+				id="logo"
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 714.6 401.1">
+				<path
+					fill="#000000"
+					opacity="1.000000"
+					stroke="none"
+					d="
+M1.000002,182.468658 
+	C2.660623,177.971344 4.426096,173.982269 5.964209,169.907364 
+	C13.785286,149.187149 33.030163,133.846710 55.116814,131.969528 
+	C83.834351,129.528748 104.307617,143.125595 119.756584,165.629410 
+	C126.904762,176.041855 130.511215,188.013580 132.188156,200.755936 
+	C133.944595,214.102524 131.985336,226.607452 127.004295,238.814331 
+	C119.084000,258.224396 105.198929,270.858826 84.362747,274.965912 
+	C63.767254,279.025513 45.719830,273.640137 29.572598,260.232697 
+	C15.676273,248.694183 7.101566,234.228119 2.928901,216.876846 
+	C2.706368,215.951508 2.140462,215.108749 1.367202,214.113770 
+	C1.000000,203.645767 1.000000,193.291550 1.000002,182.468658 
+z" />
+				<path
+					fill="#000000"
+					opacity="1.000000"
+					stroke="none"
+					d="
+M513.000000,277.531372 
+	C510.000305,286.331421 507.984650,295.195984 503.814423,302.893219 
+	C491.827942,325.017487 473.379211,339.343170 448.362488,343.874725 
+	C431.436554,346.940704 415.591370,343.528137 401.483826,333.121887 
+	C389.612366,324.365112 382.185974,312.734741 379.059235,298.480652 
+	C373.883453,274.885376 379.580444,253.682709 393.935944,234.555801 
+	C406.601746,217.680145 423.403870,206.949234 444.171478,204.286209 
+	C461.312042,202.088303 477.790527,205.109024 491.752533,217.082596 
+	C503.206573,226.905350 509.789154,239.065277 512.615845,253.865387 
+	C513.000000,261.687592 513.000000,269.375153 513.000000,277.531372 
+z" />
+				<path
+					fill="#000000"
+					opacity="1.000000"
+					stroke="none"
+					d="
+M165.719040,237.724091 
+	C182.070419,226.218628 199.750504,218.861588 219.184998,216.031448 
+	C247.796677,211.864883 274.961060,216.453857 300.179657,230.729233 
+	C319.722595,241.791870 335.037933,257.354126 346.882019,276.429718 
+	C354.350891,288.458710 362.183929,300.261017 369.718445,312.249969 
+	C381.357880,330.770630 393.586548,348.971832 404.208618,368.063324 
+	C411.386139,380.963806 413.028320,395.434143 411.208130,410.514496 
+	C408.796967,430.490875 400.454193,447.113800 385.857758,460.483459 
+	C374.080963,471.270508 359.953705,477.412628 344.043518,480.138977 
+	C324.624359,483.466583 307.406952,476.791168 289.789032,470.554962 
+	C280.304596,467.197784 270.325562,465.046600 260.417877,463.140289 
+	C253.225128,461.756348 245.762329,460.930817 238.456604,461.139526 
+	C217.453583,461.739471 196.952194,465.279572 177.556656,473.844299 
+	C165.304794,479.254517 152.449142,482.064789 139.120285,480.888153 
+	C123.142708,479.477722 108.421280,474.435913 95.592010,464.216095 
+	C81.795891,453.226135 72.432121,439.562134 67.879829,422.504333 
+	C63.059734,404.443024 63.273403,386.472290 71.921555,369.857605 
+	C79.993225,354.350403 89.692177,339.665619 99.068726,324.868408 
+	C111.483429,305.276672 124.075966,285.789856 137.003738,266.534332 
+	C143.174759,257.342804 150.627853,249.117950 159.791733,242.636002 
+	C161.779938,241.229691 163.558868,239.527527 165.719040,237.724091 
+z" />
+				<path
+					fill="#000000"
+					opacity="1.000000"
+					stroke="none"
+					d="
+M274.999023,135.771851 
+	C271.920746,150.184814 266.813721,163.220444 258.053223,174.724594 
+	C245.646759,191.016602 229.895462,201.596207 209.223587,203.994095 
+	C177.184875,207.710526 154.555786,193.072250 138.061172,167.020767 
+	C131.089096,156.009109 127.530869,143.790115 125.877274,130.777756 
+	C122.811874,106.655937 128.003860,84.782425 141.665268,64.757133 
+	C153.517288,47.384117 169.881516,36.208328 190.425461,33.308865 
+	C212.160522,30.241297 231.985916,36.235939 248.350449,51.803658 
+	C263.485229,66.201523 272.780090,83.626122 274.828003,104.370186 
+	C275.837402,114.594490 275.001038,125.001030 274.999023,135.771851 
+z" />
+				<path
+					fill="#000000"
+					opacity="1.000000"
+					stroke="none"
+					d="
+M313.057068,217.004715 
+	C298.839050,205.632996 289.691925,191.295685 286.390747,173.686874 
+	C283.270111,157.041016 284.546814,140.628738 290.712036,124.662155 
+	C295.277405,112.838852 301.879089,102.261665 311.015686,93.672508 
+	C326.846954,78.789818 345.718750,70.650444 367.736542,73.146713 
+	C389.091309,75.567810 405.122284,86.995956 415.828613,105.554222 
+	C423.556091,118.949089 426.879669,133.685913 425.864227,149.003159 
+	C424.614014,167.861572 418.510864,185.100479 406.509064,200.126984 
+	C400.293152,207.909424 392.977386,214.159424 384.455505,219.109375 
+	C369.506836,227.792328 353.789398,231.323776 336.508667,227.326431 
+	C328.017120,225.362198 320.279724,222.354279 313.057068,217.004715 
+z" />
+			</svg>
+			<nav>
+				<a href="#hero">Home</a>
+				<a href="#near">Near-by</a>
+				<a href="#test">Space</a>
+				<a href="#future">Future</a>
+				<button id="openmenu">
+					<span></span>
+					<span></span>
+				</button>
+			</nav>
+		</header>
+		<div id="page">
+			<section
+				class=""
+				id="hero">
+				<div
+					class="container m-0"
+					style="max-width: 100%">
+					<div class="row align-items-center justify-content-center mx-auto pt-5">
+						<div class="col-xl-5 col-lg-6 ps-5">
+							<div class="hero_content">
+								<h1
+									class="display-1"
+									data-aos="fade-up"
+									data-aos-delay="200">
+									Find Your Best Friend
+								</h1>
+								<p
+									data-aos="fade-up"
+									data-aos-delay="400">
+									Visit our shelter and find your new best friend. We have a wide variety of animals to choose from. We have dogs, cats, birds, and more. We are sure you will find the perfect pet for you.
+								</p>
+								<div
+									data-aos="fade-up"
+									data-aos-delay="600"
+									class="wrapper">
+									<button class="btn">
+										<div class="btn__bg">
+											<span class="btn__bg__layer btn__bg__layer-first"></span>
+											<span class="btn__bg__layer btn__bg__layer-second"></span>
+											<span class="btn__bg__layer btn__bg__layer-third"></span>
+										</div>
+										<span class="btn__text-out">Book a Visit</span>
+										<span class="btn__text-in">Book a Visit</span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-7 col-lg-6 col-md-9">
+							<div class="hero-image text-end">
+								<img
+									class="img-fluid"
+									src="images\hero.png"
+									alt="img"
+									data-aos="fade-left"
+									data-aos-delay="800" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<img
+					src="images/wave-haikei.png"
+					alt=""
+					class="img-fluid visual" />
+			</section>
+			<section id="near">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<h1>lorem</h1>
+						</div>
+						<div class="col">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, quae ullam! Voluptatum, suscipit? Quos beatae, cum ipsam dolor aliquid id dolorum dicta reprehenderit commodi at, corporis maxime eaque, excepturi tempora.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<h1>lorem</h1>
+						</div>
+						<div class="col">
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque explicabo quisquam incidunt eum totam aspernatur ipsum maxime commodi ullam sint, ipsam tempora deleniti saepe neque veritatis, voluptatibus odio, rem eligendi.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="test">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<h1>lorem</h1>
+						</div>
+						<div class="col">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, quae ullam! Voluptatum, suscipit? Quos beatae, cum ipsam dolor aliquid id dolorum dicta reprehenderit commodi at, corporis maxime eaque, excepturi tempora.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<h1>lorem</h1>
+						</div>
+						<div class="col">
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque explicabo quisquam incidunt eum totam aspernatur ipsum maxime commodi ullam sint, ipsam tempora deleniti saepe neque veritatis, voluptatibus odio, rem eligendi.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<script src="script.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
+</html>
