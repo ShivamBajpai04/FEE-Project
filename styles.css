@@ -28,6 +28,11 @@ body {
 	position: relative;
 }
 
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+
 .visual {
 	position: absolute;
 	bottom: 0;
@@ -50,8 +55,25 @@ body {
 
 .wrapper {
 	display: flex;
+}
+.btn-circle {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	padding: 0;
+	transition: scale 0.3s;
+}
+
+.btn-circle:hover {
+	scale: 1.5; /* Change to desired hover background color */
+}
+
+.btn-icon {
+	display: flex;
+	align-items: center;
 	justify-content: center;
 }
+
 .btn {
 	display: inline-block;
 	height: 6rem;
@@ -287,11 +309,11 @@ header.sticky nav a {
 	height: 100%;
 	overflow: hidden;
 	text-align: center;
+	transition: scale 0.5s;
 }
 
 .card:hover {
-	transform: scale(1.05);
-	transition: 0.5s all ease-in-out;
+	scale: 1.05;
 }
 
 .card__image-wrapper {
@@ -337,5 +359,3 @@ img {
 .content a {
 	text-decoration: none;
 }
-
-
