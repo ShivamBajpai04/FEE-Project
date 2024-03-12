@@ -1,10 +1,10 @@
 var arr = [
-	{ name: "John Doe", init: "JD", img: "https://images.unsplash.com/photo-1552053831-71594a27632d?q=80&w=1924&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-	{ name: "Jane Doe", init: "JD", img: "https://images.unsplash.com/photo-1634170380003-3e3e3e3e3e3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMjIwNzR8MHwxfGFsbHwxfHx8fHx8fHx8fHwxNjM0MzYwNzIw&ixlib=rb-1.2.1&q=80&w=400" },
-	{ name: "John Doe", init: "JD", img: "https://images.unsplash.com/photo-1634170380003-3e3e3e3e3e3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMjIwNzR8MHwxfGFsbHwxfHx8fHx8fHx8fHwxNjM0MzYwNzIw&ixlib=rb-1.2.1&q=80&w=400" },
-	{ name: "Jane Doe", init: "JD", img: "https://images.unsplash.com/photo-1634170380003-3e3e3e3e3e3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMjIwNzR8MHwxfGFsbHwxfHx8fHx8fHx8fHwxNjM0MzYwNzIw&ixlib=rb-1.2.1&q=80&w=400" },
-	{ name: "John Doe", init: "JD", img: "https://images.unsplash.com/photo-1634170380003-3e3e3e3e3e3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMjIwNzR8MHwxfGFsbHwxfHx8fHx8fHx8fHwxNjM0MzYwNzIw&ixlib=rb-1.2.1&q=80&w=400" },
-	{ name: "Jane Doe", init: "JD", img: "https://images.unsplash.com/photo-1634170380003-3e3e3e3e3e3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMjIwNzR8MHwxfGFsbHwxfHx8fHx8fHx8fHwxNjM0MzYwNzIw&ixlib=rb-1.2.1&q=80&w=400" },
+	{ name: "John Doe", init: "JD", img: "https://images.unsplash.com/photo-1552053831-71594a27632d?q=80&w=1924&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", caption: "Good day to be a dog" },
+	{ name: "Jane Doe", init: "JD", img: "https://images.unsplash.com/photo-1524704796725-9fc3044a58b2?q=80&w=1810&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", caption: "Good day to be a dog" },
+	{ name: "John Doe", init: "JD", img: "https://images.unsplash.com/photo-1613176748515-8cd503764873?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", caption: "Good day to be a dog" },
+	{ name: "Jane Doe", init: "JD", img: "https://plus.unsplash.com/premium_photo-1677101221533-52b45823a2dc?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", caption: "Good day to be a dog" },
+	{ name: "John Doe", init: "JD", img: "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", caption: "Good day to be a dog" },
+	{ name: "Jane Doe", init: "JD", img: "https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", caption: "Good day to be a dog" },
 ];
 const dogComments = [
 	"🐾 Cutest paw prints ever!",
@@ -29,17 +29,62 @@ const dogComments = [
 	"Cuteness overload alert! 🚨",
 ];
 const randomFirstNames = [
-    "Luna", "Max", "Ruby", "Oliver", "Zoe", "Leo", "Ava", "Dexter", "Mia", "Charlie",
-    "Sophie", "Rocky", "Stella", "Oscar", "Bella", "Cooper", "Lucy", "Teddy", "Chloe", "Apollo",
-    "Nova", "Finn", "Lily", "Jasper", "Cleo", "Milo", "Lola", "Cody", "Layla", "Winston",
-    "Penny", "Zeus", "Ivy", "Ollie", "Maya", "Bruno", "Hazel", "Riley", "Sadie", "Duke",
-    "Maddie", "Thor", "Willow", "Coco", "Rusty", "Piper", "Hank", "Maisy", "Jack"
-  ];
-  
+	"Luna",
+	"Max",
+	"Ruby",
+	"Oliver",
+	"Zoe",
+	"Leo",
+	"Ava",
+	"Dexter",
+	"Mia",
+	"Charlie",
+	"Sophie",
+	"Rocky",
+	"Stella",
+	"Oscar",
+	"Bella",
+	"Cooper",
+	"Lucy",
+	"Teddy",
+	"Chloe",
+	"Apollo",
+	"Nova",
+	"Finn",
+	"Lily",
+	"Jasper",
+	"Cleo",
+	"Milo",
+	"Lola",
+	"Cody",
+	"Layla",
+	"Winston",
+	"Penny",
+	"Zeus",
+	"Ivy",
+	"Ollie",
+	"Maya",
+	"Bruno",
+	"Hazel",
+	"Riley",
+	"Sadie",
+	"Duke",
+	"Maddie",
+	"Thor",
+	"Willow",
+	"Coco",
+	"Rusty",
+	"Piper",
+	"Hank",
+	"Maisy",
+	"Jack",
+];
+
 function initcommunity() {
 	var clutter = "";
-	arr.forEach((obj) => {
-		clutter += `<div class="space-y-4 post bg-slate-100 rounded-md">
+	arr.forEach((obj, index) => {
+		clutter += `
+        <div class="space-y-4 post bg-slate-100 rounded-md">
             <div
                 class="bg-card text-card-foreground rounded-none shadow-none border-0"
                 data-v0-t="card">
@@ -57,7 +102,7 @@ function initcommunity() {
                         width="100%"
                         height="auto"
                         alt="Image"
-                        class="aspect-video object-scale-down img-fluid" />
+                        class="aspect-video object-scale-down" />
                 </div>
                 <div class="items-center p-2 pb-4 grid gap-2">
                     <div class="flex items-center w-full">
@@ -117,7 +162,9 @@ function initcommunity() {
                         <div>
                             <a
                                 class="font-medium"
-                                href="#">
+                                data-rel="popup"
+                                href="#popup">
+                                
                                 ${randomFirstNames[Math.floor(Math.random() * randomFirstNames.length)]}
                             </a>
                             ${dogComments[Math.floor(Math.random() * dogComments.length)]}
@@ -125,7 +172,53 @@ function initcommunity() {
                     </div>
                 </div>
             </div>
-        </div>`;
+            <div class="w-full h-auto">
+                <button type="button" popovertarget="pop-${index}" class="text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mx-2 mb-2">View Post</button>
+            </div>
+        </div>
+        <div class="pop rounded-md"style="width:70%" id="pop-${index}" popover>
+            <div style="margin-inline:auto" class=" flex flex-col">
+                <div style="margin-inline:auto" class="mx-auto flex-1 w-full min-h-0 border-t border-gray-200 dark:border-gray-800">
+                    <div style="margin-inline:auto" class=" mx-auto container grid gap-6 px-4 py-6 md:grid-cols-3 md:gap-10 md:px-6 lg:gap-12">
+                        <div style="margin-inline:auto" class="mx-auto md:col-span-2 space-y-4">
+                            <div class="aspect-video overflow-hidden rounded-lg">
+                                <img
+                                    src="${obj.img}"
+                                    width="100%"
+                                    height="auto"
+                                    class="object-scale-down aspect-video"/>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="flex items-center space-x-4">
+                                    <div class="flex items-center space-x-2">
+                                        <span class="relative flex shrink-0 overflow-hidden rounded-full w-10 h-10"></span>
+                                        <div class="space-y-1.5">
+                                            <h2 class="text-base font-semibold">${obj.name}</h2>
+                                            <p class="text-sm text-gray-500 dark:text-gray-400">${obj.caption}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="flex items-center space-x-2">
+                                    <span class="relative flex shrink-0 overflow-hidden rounded-full w-8 h-8"></span>
+                                    <div class="border rounded-full p-3 w-full"><p class="text-sm text-gray-500 dark:text-gray-400">${dogComments[Math.floor(Math.random() * dogComments.length)]}</p></div>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <span class="relative flex shrink-0 overflow-hidden rounded-full w-8 h-8"></span>
+                                    <div class="border rounded-full p-3 w-full"><p class="text-sm text-gray-500 dark:text-gray-400">${dogComments[Math.floor(Math.random() * dogComments.length)]}</p></div>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <span class="relative flex shrink-0 overflow-hidden rounded-full w-8 h-8"></span>
+                                    <div class="border rounded-full p-3 w-full"><p class="text-sm text-gray-500 dark:text-gray-400">${dogComments[Math.floor(Math.random() * dogComments.length)]}</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        `;
 	});
 	document.querySelector("#content").innerHTML += clutter;
 }
@@ -143,12 +236,12 @@ submitPost.addEventListener("click", function () {
 		.map((n) => n[0])
 		.join("");
 
-	addPost(name, init, imageURL);
+	addPost(name, init, imageURL, caption);
 });
 
-function addPost(name, init, imageURL) {
+function addPost(name, init, imageURL, caption) {
 	console.log(name, imageURL, init);
-	arr.unshift({ name: name, init: init, img: imageURL });
+	arr.unshift({ name: name, init: init, img: imageURL, caption: caption });
 	document.querySelector("#content").innerHTML = "";
 	initcommunity();
 }
