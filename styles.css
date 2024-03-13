@@ -25,6 +25,7 @@ body {
 
 #about {
 	background-image: url("images/BG.jpg");
+	background-repeat: repeat-y;
 	position: relative;
 }
 
@@ -359,19 +360,19 @@ img {
 .content a {
 	text-decoration: none;
 }
-.heading{
+.heading {
 	text-align: center;
 }
-nav{
+nav {
 	display: flex;
 	justify-content: space-between;
 }
-.items{
+.items {
 	display: flex;
 	gap: 10px;
 }
 
-.items .bajpai{
+.items .bajpai {
 	width: 23%;
 	min-width: 250px;
 	padding: 10px 12px;
@@ -380,89 +381,82 @@ nav{
 	cursor: pointer;
 	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
 	margin: 15px 0;
-	transition: 0.2s ease ;
+	transition: 0.2s ease;
 }
-.items .bajpai:hover{
+.items .bajpai:hover {
 	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
 }
-.items .bajpai img{
+.items .bajpai img {
 	width: 100%;
 	border-radius: 20px;
 }
-.items .bajpai .des{
+.items .bajpai .des {
 	text-align: start;
 	padding: 10px 0;
 }
-.items .bajpai .des span{
+.items .bajpai .des span {
 	color: #606063;
-	font-size: 12px
+	font-size: 12px;
 }
-.items .bajpai .des h5{
+.items .bajpai .des h5 {
 	padding-top: 7px;
 	color: #1a1a1a;
 	font-size: 14px;
 }
-.items .bajpai .des i{
+.items .bajpai .des i {
 	font-size: 12px;
 	color: rgb(243, 181, 25);
 }
-.items .bajpai .des h4{
+.items .bajpai .des h4 {
 	padding-top: 7px;
 	font-size: 15px;
 	font-weight: 700;
 	color: #088178;
 }
 
-
-
-
-
 /*detail page*/
-.detail{
+.detail {
 	display: grid;
-	grid-template-columns: repeat(2,1fr);
+	grid-template-columns: repeat(2, 1fr);
 	gap: 50px;
 	text-align: left;
 }
-.detail .image .img{
+.detail .image .img {
 	width: 100%;
 }
-.detail .image{
+.detail .image {
 	position: relative;
 }
-.detail .name{
+.detail .name {
 	font-size: xxx-large;
 	padding: 40px 0 0 0;
 	margin: 0 0 10px 0;
-
 }
-.detail .adopt{
+.detail .adopt {
 	font-weight: bold;
 	font-size: x-large;
 	letter-spacing: 7px;
 	margin-bottom: 20px;
 }
-.detail .description{
+.detail .description {
 	font-weight: 300;
 }
-@media screen and (max-width: 992px){
-	.detail{
+@media screen and (max-width: 992px) {
+	.detail {
 		grid-template-columns: 40% 1fr;
 	}
-	
 }
-@media screen and (max-width: 768px){
-	.detail{
+@media screen and (max-width: 768px) {
+	.detail {
 		grid-template-columns: 1fr;
 		text-align: center;
 	}
-	.detail .img img{
+	.detail .img img {
 		width: unset;
 		height: 40vh;
 	}
-	.detail .name{
+	.detail .name {
 		font-size: x-large;
 		margin: 0;
 	}
-	
 }
