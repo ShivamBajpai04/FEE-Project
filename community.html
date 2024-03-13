@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+
+		<title>Community</title>
+	</head>
+	<style>
+		.pop::backdrop {
+			background-color: #000000de;
+		}
+		img {
+			-webkit-user-drag: none;
+			user-select: none;
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+	</style>
+	<body>
+		<div class="flex flex-col h-screen">
+			<div class="border-b">
+				<div class="container flex items-center justify-between h-14 px-4 md:px-6">
+					<a
+						class="flex items-center space-x-2"
+						href="#">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="w-6 h-6 text-[#e1306c]">
+							<path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path>
+							<circle
+								cx="12"
+								cy="13"
+								r="3"></circle>
+						</svg>
+						<span class="font-semibold text-lg text-[#e1306c]">PetFinder Community</span>
+					</a>
+
+					<button
+						class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="w-6 h-6">
+							<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+						</svg>
+						<span class="sr-only">Notifications</span>
+					</button>
+				</div>
+			</div>
+			<main class="flex-1 pb-10">
+				<div
+					id="content"
+					class="container grid gap-4 px-4 py-6 md:grid-cols-3 md:gap-8 md:px-6"></div>
+			</main>
+			<form
+				id="postForm"
+				class="bg-card text-card-foreground rounded-md shadow-lg p-6 max-w-md mx-auto border-2 border-gray-300">
+				<div class="space-y-4">
+					<div class="flex items-center gap-4 text-sm font-semibold mb-4">
+						<!-- User Name Input -->
+						<input
+							type="text"
+							id="postName"
+							class="flex-1 rounded-md border border-gray-400 px-3 py-2 text-sm placeholder-text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+							placeholder="Your Name" />
+					</div>
+					<!-- Post Image URL Input -->
+					<input
+						type="url"
+						id="postImageURL"
+						class="w-full rounded-md border border-gray-400 px-3 py-2 text-sm placeholder-text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+						placeholder="Post Image URL" />
+					<!-- Post Caption Textarea -->
+					<textarea
+						id="postCaption"
+						class="w-full rounded-md border border-gray-400 px-3 py-2 text-sm placeholder-text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+						placeholder="Write your post caption here..."
+						rows="4"></textarea>
+				</div>
+				<!-- Submit Button -->
+				<div class="flex justify-end mt-6">
+					<button
+						id="submitPost"
+						class="bg-slate-100 inline-flex items-center justify-center w-32 h-12 text-sm font-medium bg-accent text-accent-foreground rounded-md hover:bg-accent-dark focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 transition duration-300 ease-in-out transform hover:scale-105"
+						type="button">
+						Post
+					</button>
+				</div>
+			</form>
+		</div>
+
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="community.js"></script>
+	</body>
+</html>

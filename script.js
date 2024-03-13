@@ -60,7 +60,7 @@ class ParallaxCard {
 }
 
 function initCardParallax() {
-	const cardEls = document.querySelectorAll(".card");
+	const cardEls = document.querySelectorAll(".prlx");
 	const cards = Array.from(cardEls).map((cardEl) => new ParallaxCard(cardEl));
 
 	function update() {

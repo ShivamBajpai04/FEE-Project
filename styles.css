@@ -1,11 +1,20 @@
 section {
-	min-height: 100vh;
 	margin: 0;
 }
-
+.vibur-regular {
+	font-family: "Vibur", cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+p {
+	font-size: 1.6rem;
+}
 html,
 body {
-	font-family: "Poppins", sans-serif;
+	box-sizing: border-box;
+	font-family: "Vibur", cursive;
+	font-weight: 400;
+	font-style: normal;
 	overflow-x: hidden;
 }
 
@@ -13,6 +22,17 @@ body {
 	background-image: url("images/BG.jpg");
 	position: relative;
 }
+
+#about {
+	background-image: url("images/BG.jpg");
+	position: relative;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+
 .visual {
 	position: absolute;
 	bottom: 0;
@@ -35,8 +55,25 @@ body {
 
 .wrapper {
 	display: flex;
+}
+.btn-circle {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	padding: 0;
+	transition: scale 0.3s;
+}
+
+.btn-circle:hover {
+	scale: 1.5; /* Change to desired hover background color */
+}
+
+.btn-icon {
+	display: flex;
+	align-items: center;
 	justify-content: center;
 }
+
 .btn {
 	display: inline-block;
 	height: 6rem;
@@ -158,7 +195,7 @@ header nav {
 	position: fixed;
 	left: 0;
 	right: 0;
-	width: 500px;
+	width: 65%;
 	margin: 1rem auto;
 	top: 120px;
 	background-color: rgba(255, 255, 255, 0.05);
@@ -174,9 +211,9 @@ header nav a {
 	text-decoration: none;
 	font-weight: 700;
 	display: block;
-	padding: 10px 20px;
+	font-size: 1rem;
+	padding: 0.6rem 1.3rem;
 	line-height: 1;
-	font-size: 15px;
 	letter-spacing: 2px;
 	text-transform: lowercase;
 	transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
@@ -228,8 +265,8 @@ header.sticky #logo {
 header.sticky nav {
 	top: 20px;
 	padding: 0;
-	width: 90px;
-	height: 90px;
+	width: 6rem;
+	height: 6rem;
 	transition-delay: 0.5s;
 }
 header.sticky nav button {
@@ -272,11 +309,11 @@ header.sticky nav a {
 	height: 100%;
 	overflow: hidden;
 	text-align: center;
+	transition: scale 0.5s;
 }
 
 .card:hover {
-	transform: scale(1.05);
-	transition: 0.5s all ease-in-out;
+	scale: 1.05;
 }
 
 .card__image-wrapper {
@@ -315,10 +352,8 @@ img {
 .content:hover {
 	opacity: 1;
 }
-.content h2 {
-	font-size: 100px;
+.content h1 {
 	color: #ffab70;
-	margin-bottom: 15px;
 }
 
 .content a {
