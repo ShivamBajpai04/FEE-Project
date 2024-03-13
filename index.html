@@ -167,7 +167,9 @@ z" />
 									data-aos="fade-up"
 									data-aos-delay="600"
 									class="wrapper">
-									<a class="btn">
+									<button
+										class="btn"
+										popovertarget="detail_form">
 										<div class="btn__bg">
 											<span class="btn__bg__layer btn__bg__layer-first"></span>
 											<span class="btn__bg__layer btn__bg__layer-second"></span>
@@ -175,7 +177,75 @@ z" />
 										</div>
 										<span class="btn__text-out">Book a Visit</span>
 										<span class="btn__text-in">Book a Visit</span>
-									</a>
+									</button>
+								</div>
+								<div
+									id="detail_form"
+									class="container mt-5"
+									popover>
+									<div class="row justify-content-center">
+										<div class="col-md-6">
+											<div
+												style="scale: 1"
+												class="card">
+												<div class="card-body">
+													<h1 class="text-center mb-4">Personal Information</h1>
+													<p class="text-center text-muted">Enter your personal information</p>
+
+													<div class="mb-3">
+														<label
+															for="name"
+															class="form-label">
+															Name
+														</label>
+														<input
+															type="text"
+															class="form-control"
+															id="name"
+															placeholder="Enter your name"
+															required />
+													</div>
+
+													<div class="mb-3">
+														<label
+															for="age"
+															class="form-label">
+															Age
+														</label>
+														<input
+															type="number"
+															class="form-control"
+															id="age"
+															placeholder="Enter your age"
+															required />
+													</div>
+
+													<div class="mb-3">
+														<label
+															for="contact-number"
+															class="form-label">
+															Contact Number
+														</label>
+														<input
+															type="tel"
+															class="form-control"
+															id="contact-number"
+															placeholder="Enter your contact number"
+															required />
+													</div>
+													<div class="text-center">
+														<button
+														popovertarget="detail_form" popovertargetaction="hide"
+														onclick="myfunc()"
+															type="submit"
+															class="bg-primary btn-primary btn rounded-pill w-25 h-auto mt-5">
+															Submit
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>

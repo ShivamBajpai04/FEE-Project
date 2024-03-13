@@ -76,3 +76,7 @@ function initCardParallax() {
 }
 
 initCardParallax();
+
+function myfunc(){
+	alert("Thank you for your registering. We will get back to you soon with your time slot.");
+}
