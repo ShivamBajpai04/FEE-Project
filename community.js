@@ -199,7 +199,8 @@ function initcommunity() {
                                     </div>
                                 </div>
                             </div>
-                            <div class="space-y-4">
+                            <div class="space-y-4 bg-slate-100">
+                            <h3 class="m-4 font-semibold">Comments</h3>
                                 <div class="flex items-center space-x-2">
                                     <span class="relative flex shrink-0 overflow-hidden rounded-full w-8 h-8"></span>
                                     <div class="border rounded-full p-3 w-full"><p class="text-sm text-gray-500 dark:text-gray-400">${dogComments[Math.floor(Math.random() * dogComments.length)]}</p></div>
